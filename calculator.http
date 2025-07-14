@@ -1,0 +1,21 @@
+### Calculator API Test
+
+# Add
+GET http://localhost:8080/api/calculator/add?a=5&b=3
+Accept: application/json
+
+### Subtract
+GET http://localhost:8080/api/calculator/subtract?a=10&b=4
+Accept: application/json
+
+### Multiply
+GET http://localhost:8080/api/calculator/multiply?a=6&b=7
+Accept: application/json
+
+### Divide
+GET http://localhost:8080/api/calculator/divide?a=20&b=4
+Accept: application/json
+
+### Divide by zero (error case)
+GET http://localhost:8080/api/calculator/divide?a=10&b=0
+Accept: application/json

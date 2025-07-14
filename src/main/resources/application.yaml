@@ -1,0 +1,26 @@
+spring:
+  port: 8080
+  application:
+    name: mcpdemo
+
+  ai:
+    mcp:
+      server:
+        name: my-mcp-server
+        version: 1.0.0
+        type: ASYNC
+        instructions: "MCP server for custom tools"
+        sse-message-endpoint: /mcp/messages
+        sse-endpoint: /mcp/sse
+        capabilities:
+          tool: true
+          resource: true
+          prompt: true
+          completion: true
+
+  # application.yml
+logging:
+  level:
+    io.modelcontextprotocol.server.transport: TRACE
+    org.springframework.web: TRACE
+    org.springframework.ai.mcp: TRACE

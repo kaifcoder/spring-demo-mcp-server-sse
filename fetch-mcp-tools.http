@@ -1,0 +1,3 @@
+### Fetch MCP tools from local Spring Boot MCP server
+GET http://localhost:8080/mcp/v1/tools
+Accept: application/json
