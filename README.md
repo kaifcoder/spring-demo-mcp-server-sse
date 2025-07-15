@@ -162,7 +162,7 @@ You can now send tool/list or tool/invoke requests as shown below. All responses
 
 ## VS Code Integration
 1. Open VS Code and install an MCP-compatible extension (e.g., Copilot Chat).
-2. Set the MCP server URL to `http://localhost:8080/mcp/messages` in the extension settings.
+2. Set the MCP server URL to `http://localhost:8080/mcp/sse` in the extension settings.
 3. Use the extension's chat or tool features to call your user tool.
 
 ---
